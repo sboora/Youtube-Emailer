@@ -8,9 +8,9 @@ Most of the third party service do not work great with your unlisted youtube vid
 You will need to get Auth token from Youtube using ClientLogin as specified here 
 https://developers.google.com/youtube/2.0/developers_guide_protocol_clientlogin
 
-Run the following command from the terminal 
+Run the following command from the terminal, with your email and password. 
 
-curl --silent 'https://www.google.com/accounts/ClientLogin' --data-urlencode Email=youremail.com --data-urlencode Passwd='yourpassword' -d accountType=GOOGLE -d source=SO -d service=youtube | grep Auth
+curl --silent 'https://www.google.com/accounts/ClientLogin' --data-urlencode Email={youremail.com} --data-urlencode Passwd='{yourpassword}' -d accountType=GOOGLE -d source=SO -d service=youtube | grep Auth
 
 The output should look something like 
 
